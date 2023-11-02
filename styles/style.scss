@@ -69,3 +69,91 @@
         display: inline-block;
     }
 }
+
+.brandWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1E4E6;
+    min-height: 363px;
+
+    @media (min-width: 768px) {
+        min-height: 368px;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 764px;
+    }
+}
+
+.brandNameWrap {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+
+    span {
+        color: $brandPinkColor;
+    }
+}
+
+.brandName {
+
+    border-left: 12px solid $brandPinkColor;
+    padding-left: 15px;
+
+
+    div:first-child {
+        font-size: 38px;
+        font-weight: 900;
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 48px;
+        }
+    }
+
+    div:last-child {
+        font-size: 20px;
+        font-weight: 700;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 32px;
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .brandWrap>div {
+        width: 50%;
+    }
+
+    .brandModelPicture {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .brandNameWrap {
+        justify-content: flex-start;
+    }
+
+    .brandName {
+        margin-left: 60px;
+    }
+}

@@ -70,3 +70,89 @@
     display: inline-block;
   }
 }
+
+.brandWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1E4E6;
+  min-height: 363px;
+}
+@media (min-width: 768px) {
+  .brandWrap {
+    min-height: 368px;
+  }
+}
+@media (min-width: 1200px) {
+  .brandWrap {
+    min-height: 764px;
+  }
+}
+
+.brandNameWrap {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+.brandNameWrap span {
+  color: #F16D7F;
+}
+
+.brandName {
+  border-left: 12px solid #F16D7F;
+  padding-left: 15px;
+}
+.brandName div:first-child {
+  font-size: 38px;
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  .brandName div:first-child {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  .brandName div:first-child {
+    font-size: 48px;
+  }
+}
+.brandName div:last-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .brandName div:last-child {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .brandName div:last-child {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .brandWrap > div {
+    width: 50%;
+  }
+
+  .brandModelPicture {
+    display: flex;
+    justify-content: center;
+  }
+  .brandModelPicture img {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .brandNameWrap {
+    justify-content: flex-start;
+  }
+
+  .brandName {
+    margin-left: 60px;
+  }
+}
