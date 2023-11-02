@@ -1,0 +1,71 @@
+@import "variables/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+.mainHeader {
+    background-color: $brandDarkColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-left: 231px;
+        padding-right: 231px;
+    }
+}
+
+.mainHeader i {
+    color: $brandLightColor;
+    font-size: x-large;
+}
+
+.logoOfCompany {
+    margin-right: 41px;
+}
+
+.hidden {
+    display: none;
+}
+
+.account {
+    @media (min-width: 768px) {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 42px;
+    }
+}
+
+.cartWrap {
+    position: relative;
+
+    span {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: $brandPinkColor;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    @media (min-width: 768px) {
+        display: inline-block;
+    }
+}
