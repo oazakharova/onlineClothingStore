@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +13,12 @@
   align-items: center;
   padding: 18px 16px;
 }
-
 @media (min-width: 768px) {
   .mainHeader {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
-
 @media (min-width: 1200px) {
   .mainHeader {
     padding-left: 231px;
@@ -53,7 +50,6 @@
 .cartWrap {
   position: relative;
 }
-
 .cartWrap span {
   position: absolute;
   top: -5px;
@@ -69,7 +65,6 @@
   text-align: center;
   line-height: 15px;
 }
-
 @media (min-width: 768px) {
   .cartWrap {
     display: inline-block;
@@ -83,16 +78,14 @@
   background-color: #F1E4E6;
   min-height: 363px;
 }
-
 @media (min-width: 768px) {
   .brandWrap {
-    height: 368px;
+    max-height: 368px;
   }
 }
-
 @media (min-width: 1200px) {
   .brandWrap {
-    height: 764px;
+    max-height: 764px;
   }
 }
 
@@ -103,7 +96,6 @@
   align-items: center;
   color: #222;
 }
-
 .brandNameWrap span {
   color: #F16D7F;
 }
@@ -112,35 +104,29 @@
   border-left: 12px solid #F16D7F;
   padding-left: 15px;
 }
-
 .brandName div:first-child {
   font-size: 38px;
   font-weight: 900;
 }
-
 @media (min-width: 768px) {
   .brandName div:first-child {
     font-size: 44px;
   }
 }
-
 @media (min-width: 1200px) {
   .brandName div:first-child {
     font-size: 48px;
   }
 }
-
 .brandName div:last-child {
   font-size: 20px;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   .brandName div:last-child {
     font-size: 24px;
   }
 }
-
 @media (min-width: 1200px) {
   .brandName div:last-child {
     font-size: 32px;
@@ -148,22 +134,18 @@
 }
 
 @media (min-width: 768px) {
-  .brandWrap>div {
+  .brandWrap > div {
     width: 50%;
-    height: inherit;
   }
 
   .brandModelPicture {
     display: flex;
     justify-content: center;
   }
-
   .brandModelPicture img {
     display: block;
-    height: 100%;
   }
 }
-
 @media (min-width: 1200px) {
   .brandNameWrap {
     justify-content: flex-start;
