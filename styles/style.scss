@@ -315,15 +315,20 @@
     background-position: top center;
     background-size: cover;
     background-color: #F8F8F8;
-    width: 359px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .featuredItemLink {
     display: block;
     height: 100%;
+    width: 100%;
     text-decoration: none;
-
     margin-bottom: 25px;
+
+    img {
+        width: 100%;
+    }
 }
 
 .featuredItemName {
@@ -342,6 +347,7 @@
     margin-bottom: 18px;
     padding-left: 18px;
     padding-right: 18px;
+    max-width: 313px
 }
 
 .featuredItemPrice {
@@ -351,4 +357,47 @@
     margin-bottom: 20px;
     padding-left: 18px;
     padding-right: 18px;
+}
+
+
+.advantageWrap {
+    background: #222224;
+    display: grid;
+    justify-content: center;
+    gap: 46px;
+    padding: 48px 14px;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 103px 230px;
+    }
+}
+
+.advantageItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FBFBFB;
+    text-align: center;
+
+    img {
+        height: 33px;
+        width: 45px;
+        margin-bottom: 23px;
+    }
+}
+
+.advantageItemTitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.advantageItemDescription {
+    color: #FBFBFB;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 14px;
+    margin-right: 14px;
+    max-width: 360px;
 }
