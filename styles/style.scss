@@ -440,7 +440,6 @@
 .subscribeWrap {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(244, 244, 244, 0.70)), url(../images/subscribeBackground.png) no-repeat;
     background-size: cover;
-    margin-bottom: 110px;
 
     .container {
         flex-direction: column;
@@ -535,4 +534,41 @@
     font-size: 14px;
     font-weight: 400;
     padding: 6px 7px;
+}
+
+.mainFooter {
+    background: #222224;
+
+    .container {
+        flex-direction: column;
+
+        @media (min-width:768px) {
+            flex-direction: row-reverse;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        @media (min-width:1600px) {
+            padding-left: 0;
+            padding-right: 0;
+            width: 1140px;
+            margin: 0 auto;
+        }
+    }
+
+    .socialsWrap i {
+        color: #000;
+        height: 32px;
+        width: 32px;
+        padding: 9px;
+        margin: 40px 7px;
+        background: #FFF;
+    }
+}
+
+.copyInfo {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 9px;
 }
