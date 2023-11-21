@@ -5,6 +5,20 @@
   box-sizing: border-box;
   font-family: Lato, sans-serif; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body .mainHeader,
+  body .mainFooter {
+    flex-shrink: 0; }
+  body .brandWrap,
+  body .mainSection,
+  body .featuredWrap,
+  body .advaadvantageWrap,
+  body .subscribeWrap {
+    flex-grow: 1; }
+
 .mainHeader {
   background-color: #222;
   display: flex;
