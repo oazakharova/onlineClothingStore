@@ -7,6 +7,25 @@
   font-family: Lato, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .mainHeader,
+  .mainFooter {
+    flex-shrink: 0;
+  }
+
+  .brandWrap,
+  .mainSection,
+  .featuredWrap,
+  .advaadvantageWrap,
+  .subscribeWrap {
+    flex-grow: 1;
+  }
+}
+
 .mainHeader {
   background-color: $brandDarkColor;
   display: flex;
