@@ -43,7 +43,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
-    color: #FFF;
+    color: #fff;
     font-size: 12px;
     font-weight: 400;
     background-color: #F16D7F;
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
   height: 363px;
   margin-bottom: 64px; }
   @media (min-width: 768px) {
@@ -164,7 +164,7 @@
     font-weight: 700;
     line-height: normal; }
   .mainSectionItem div {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -220,7 +220,7 @@
   font-weight: 400;
   color: #F16D7F;
   border: 1px solid #F16D7F;
-  background: #FFF;
+  background: #fff;
   padding: 15px 39px;
   margin: 40px auto 96px; }
   @media (min-width: 768px) {
@@ -240,7 +240,7 @@
   margin-bottom: 3px; }
 
 .featuredSubtitle {
-  color: #9F9F9F;
+  color: #9f9f9f;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 65px; }
@@ -251,7 +251,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin-left: 8px;
   margin-right: 8px; }
 
@@ -260,9 +260,40 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  position: relative; }
   .featuredItemLink img {
     width: 100%; }
+
+.featuredItemLink:hover .btnAddToCart {
+  display: flex; }
+
+.featuredItemLink:hover {
+  background-color: #000;
+  pointer-events: none; }
+  .featuredItemLink:hover img {
+    opacity: 0.5; }
+
+.btnAddToCart {
+  display: none;
+  position: absolute;
+  left: calc(50% - 69px);
+  top: calc(50% - 22px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border: 1px solid #fff;
+  width: 138px;
+  height: 44px;
+  background: none; }
+
+.btnAddToCart__icon {
+  margin-right: 11px; }
+
+.btnAddToCart__call {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400; }
 
 .featuredItemName {
   color: #222;
@@ -273,7 +304,7 @@
   padding-right: 18px; }
 
 .featuredItemDescription {
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 18px;
@@ -308,7 +339,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center; }
   .advantageItem img {
     height: 33px;
@@ -321,7 +352,7 @@
   margin-bottom: 15px; }
 
 .advantageItemDescription {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 14px;
   font-weight: 300;
   margin-left: 14px;
@@ -391,7 +422,7 @@
 .subscribeInput {
   height: 47px;
   color: #222224;
-  background: #E1E1E1;
+  background: #e1e1e1;
   opacity: 0.671;
   font-size: 14px;
   font-weight: 400;
@@ -412,7 +443,7 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #F16D7F;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -439,10 +470,10 @@
     width: 32px;
     padding: 9px;
     margin: 40px 7px;
-    background: #FFF; }
+    background: #fff; }
 
 .copyInfo {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 9px; }
