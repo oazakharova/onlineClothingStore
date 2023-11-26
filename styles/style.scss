@@ -634,8 +634,6 @@ body {
 
   @media (min-width: 768px) {
     @include flexParams(flex, row, center, center);
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .container {
@@ -645,6 +643,8 @@ body {
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px;
     }
 
     @media (min-width: 1600px) {
@@ -700,4 +700,96 @@ body {
 
 .newArrivalsWrap-nav__menu__ul li:not(:last-child) a::after {
   content: " /";
+}
+
+.catalogPage__featuredWrap .container {
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 81px repeat(9, 1fr);
+  grid-template-columns: 1fr;
+  margin: 24px auto 32px;
+
+  @media (min-width: 768px) {
+    grid-template-rows: 81px repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+
+    .catalogPage__featuredWrap_filters {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    grid-template-rows: 81px repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featuredItem {
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  .featuredItem:nth-child(4) {
+    display: none;
+
+    @media (min-width: 1600px) {
+      display: flex;
+    }
+  }
+}
+
+.catalogPage__featuredWrap_filters {
+  @include flexParams(flex, row, space-between, center);
+}
+
+.catalogPage__featuredWrap_filters_mainFilterButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+
+  span {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline;
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding-right: 11px;
+    }
+  }
+}
+
+.catalogPage__featuredWrap_filters_keyFilters button {
+  background: none;
+  border: none;
+  padding: $paddingNormal;
+  margin-right: 23px;
+
+  span {
+    padding-right: 5px;
+    color: #6f6e6e;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 9px;
+
+    @media (min-width: 350px) {
+      font-size: 12px;
+      padding-right: 9px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.catalogPage__featuredWrap_filters_keyFilters button {
+  margin-right: 0;
 }
