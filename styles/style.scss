@@ -52,6 +52,10 @@ body {
   font-size: x-large;
 }
 
+.mainPageLink {
+  text-decoration: none;
+}
+
 .logoOfCompany {
   margin-right: 41px;
 }
@@ -305,10 +309,7 @@ body {
   background: #fff;
   padding: 15px 39px;
   margin: 40px auto 96px;
-  // margin-top: 40px;
-  // margin-bottom: 96px;
-  // margin-left: auto;
-  // margin-right: auto;
+  text-decoration: none;
 
   @media (min-width: 768px) {
     grid-column: 1/-1;
@@ -625,4 +626,78 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 9px;
+}
+
+.newArivalsWrap {
+  height: 148px;
+  background-color: #f8f3f4;
+
+  @media (min-width: 768px) {
+    @include flexParams(flex, row, center, center);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container {
+    @include flexParams(flex, column, center, center);
+    max-width: 1140px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1600px) {
+      width: 1140px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.newArivalsHeader {
+  color: $brandPinkColor;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 24px auto 32px;
+  display: block;
+
+  @media (min-width: 768px) {
+    margin: 0px;
+  }
+}
+
+.newArivalsWrap-nav__menu__ul {
+  list-style-type: none;
+  margin-bottom: 46px;
+  width: 100%;
+
+  @include flexParams(flex, row, center, center);
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.newArivalsWrap-nav__menu__li a {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 5px 2px;
+}
+
+.newArivalsWrap-nav__menu__li:last-child a {
+  color: $brandPinkColor;
+}
+
+.newArivalsWrap-nav__menu__ul li:not(:last-child) a::after {
+  content: " /";
 }
