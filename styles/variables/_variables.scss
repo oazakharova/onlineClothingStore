@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
-$brandPinkColor: #F16D7F;
+$brandPinkColor: #f16d7f;
 $brandDarkColor: #222;
-$brandLightColor: #E8E8E8;
+$brandLightColor: #e8e8e8;
+
+$paddingNormal: 10px;
+
+@mixin flexParams($displayFlex, $flexDirection, $justifyContent, $alignItems) {
+  display: $displayFlex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}

@@ -36,8 +36,11 @@ body {
         width: 1140px; } }
 
 .mainHeader i {
-  color: #E8E8E8;
+  color: #e8e8e8;
   font-size: x-large; }
+
+.mainPageLink {
+  text-decoration: none; }
 
 .logoOfCompany {
   margin-right: 41px; }
@@ -60,7 +63,7 @@ body {
     color: #fff;
     font-size: 12px;
     font-weight: 400;
-    background-color: #F16D7F;
+    background-color: #f16d7f;
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -93,10 +96,10 @@ body {
   align-items: center;
   color: #222; }
   .brandNameWrap span {
-    color: #F16D7F; }
+    color: #f16d7f; }
 
 .brandName {
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   padding-left: 15px; }
   .brandName div:first-child {
     font-size: 38px;
@@ -171,7 +174,7 @@ body {
   height: 100%; }
   .mainSectionItem h1 {
     display: block;
-    color: #F16D7F;
+    color: #f16d7f;
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
@@ -232,11 +235,12 @@ body {
 .allProductsBtn {
   font-size: 16px;
   font-weight: 400;
-  color: #F16D7F;
-  border: 1px solid #F16D7F;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
   background: #fff;
   padding: 15px 39px;
-  margin: 40px auto 96px; }
+  margin: 40px auto 96px;
+  text-decoration: none; }
   @media (min-width: 768px) {
     .allProductsBtn {
       grid-column: 1/-1;
@@ -327,7 +331,7 @@ body {
   max-width: 313px; }
 
 .featuredItemPrice {
-  color: #F16D7F;
+  color: #f16d7f;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -456,7 +460,7 @@ body {
   height: 47px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: #F16D7F;
+  background: #f16d7f;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -491,5 +495,72 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 9px; }
+
+.newArrivalsWrap {
+  height: 148px;
+  background-color: #f8f3f4; }
+  @media (min-width: 768px) {
+    .newArrivalsWrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px; } }
+  .newArrivalsWrap .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px; }
+    @media (min-width: 768px) {
+      .newArrivalsWrap .container {
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (min-width: 1600px) {
+      .newArrivalsWrap .container {
+        width: 1140px; } }
+  .newArrivalsWrap a {
+    text-decoration: none;
+    display: block; }
+
+.newArrivalsHeader {
+  color: #f16d7f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 24px auto 32px;
+  display: block; }
+  @media (min-width: 768px) {
+    .newArrivalsHeader {
+      margin: 0px; } }
+
+.newArrivalsWrap-nav__menu__ul {
+  list-style-type: none;
+  margin-bottom: 46px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .newArrivalsWrap-nav__menu__ul {
+      margin: 0; } }
+
+.newArrivalsWrap-nav__menu__li a {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 5px 2px; }
+
+.newArrivalsWrap-nav__menu__li:last-child a {
+  color: #f16d7f; }
+
+.newArrivalsWrap-nav__menu__ul li:not(:last-child) a::after {
+  content: " /"; }
 
 /*# sourceMappingURL=style.css.map */
