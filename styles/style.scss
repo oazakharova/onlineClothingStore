@@ -628,7 +628,7 @@ body {
   margin-bottom: 9px;
 }
 
-.newArivalsWrap {
+.newArrivalsWrap {
   height: 148px;
   background-color: #f8f3f4;
 
@@ -658,7 +658,7 @@ body {
   }
 }
 
-.newArivalsHeader {
+.newArrivalsHeader {
   color: $brandPinkColor;
   font-size: 24px;
   font-style: normal;
@@ -672,7 +672,7 @@ body {
   }
 }
 
-.newArivalsWrap-nav__menu__ul {
+.newArrivalsWrap-nav__menu__ul {
   list-style-type: none;
   margin-bottom: 46px;
   width: 100%;
@@ -684,7 +684,7 @@ body {
   }
 }
 
-.newArivalsWrap-nav__menu__li a {
+.newArrivalsWrap-nav__menu__li a {
   color: #636363;
   font-size: 14px;
   font-style: normal;
@@ -694,10 +694,10 @@ body {
   padding: 5px 2px;
 }
 
-.newArivalsWrap-nav__menu__li:last-child a {
+.newArrivalsWrap-nav__menu__li:last-child a {
   color: $brandPinkColor;
 }
 
-.newArivalsWrap-nav__menu__ul li:not(:last-child) a::after {
+.newArrivalsWrap-nav__menu__ul li:not(:last-child) a::after {
   content: " /";
 }

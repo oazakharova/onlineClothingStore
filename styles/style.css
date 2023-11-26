@@ -496,35 +496,35 @@ body {
   font-weight: 400;
   margin-bottom: 9px; }
 
-.newArivalsWrap {
+.newArrivalsWrap {
   height: 148px;
   background-color: #f8f3f4; }
   @media (min-width: 768px) {
-    .newArivalsWrap {
+    .newArrivalsWrap {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       padding-left: 16px;
       padding-right: 16px; } }
-  .newArivalsWrap .container {
+  .newArrivalsWrap .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1140px; }
     @media (min-width: 768px) {
-      .newArivalsWrap .container {
+      .newArrivalsWrap .container {
         flex-direction: row;
         justify-content: space-between; } }
     @media (min-width: 1600px) {
-      .newArivalsWrap .container {
+      .newArrivalsWrap .container {
         width: 1140px; } }
-  .newArivalsWrap a {
+  .newArrivalsWrap a {
     text-decoration: none;
     display: block; }
 
-.newArivalsHeader {
+.newArrivalsHeader {
   color: #f16d7f;
   font-size: 24px;
   font-style: normal;
@@ -533,10 +533,10 @@ body {
   margin: 24px auto 32px;
   display: block; }
   @media (min-width: 768px) {
-    .newArivalsHeader {
+    .newArrivalsHeader {
       margin: 0px; } }
 
-.newArivalsWrap-nav__menu__ul {
+.newArrivalsWrap-nav__menu__ul {
   list-style-type: none;
   margin-bottom: 46px;
   width: 100%;
@@ -545,10 +545,10 @@ body {
   justify-content: center;
   align-items: center; }
   @media (min-width: 768px) {
-    .newArivalsWrap-nav__menu__ul {
+    .newArrivalsWrap-nav__menu__ul {
       margin: 0; } }
 
-.newArivalsWrap-nav__menu__li a {
+.newArrivalsWrap-nav__menu__li a {
   color: #636363;
   font-size: 14px;
   font-style: normal;
@@ -557,10 +557,10 @@ body {
   text-transform: uppercase;
   padding: 5px 2px; }
 
-.newArivalsWrap-nav__menu__li:last-child a {
+.newArrivalsWrap-nav__menu__li:last-child a {
   color: #f16d7f; }
 
-.newArivalsWrap-nav__menu__ul li:not(:last-child) a::after {
+.newArrivalsWrap-nav__menu__ul li:not(:last-child) a::after {
   content: " /"; }
 
 /*# sourceMappingURL=style.css.map */
