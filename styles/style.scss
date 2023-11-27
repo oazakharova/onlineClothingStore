@@ -102,7 +102,7 @@ body {
   align-items: center;
   background-color: #f1e4e6;
   height: 363px;
-  margin-bottom: 64px;
+  //margin-bottom: 64px;
 
   @media (min-width: 768px) {
     height: 368px;
@@ -358,6 +358,7 @@ body {
 
   img {
     width: 100%;
+    display: block;
   }
 }
 
@@ -705,7 +706,7 @@ body {
 .catalogPage__featuredWrap .container {
   display: grid;
   gap: 16px;
-  grid-template-rows: 81px repeat(9, 1fr);
+  grid-template-rows: 81px repeat(8, 1fr);
   grid-template-columns: 1fr;
   margin: 24px auto 32px;
 
@@ -722,6 +723,7 @@ body {
   @media (min-width: 1600px) {
     grid-template-rows: 81px repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 
   .featuredItem {
@@ -792,4 +794,47 @@ body {
 
 .catalogPage__featuredWrap_filters_keyFilters button {
   margin-right: 0;
+}
+
+.pagination {
+  display: flex;
+  width: max-content;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  margin: 48px auto 96px;
+  padding: 12px 16px 12px 16px;
+
+  & li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  & li:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+
+  & li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #c4c4c4;
+  }
+
+  & li a.active {
+    color: $brandPinkColor;
+  }
+
+  & li > a:hover {
+    color: $brandPinkColor;
+  }
+
+  &__icon {
+    color: $brandDarkColor;
+
+    &:hover {
+      color: $brandPinkColor;
+    }
+  }
 }
