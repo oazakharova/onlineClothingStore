@@ -717,7 +717,6 @@ body {
     .catalogPage__featuredWrap_filters {
       grid-column-start: 1;
       grid-column-end: -1;
-      position: relative;
     }
   }
 
@@ -743,6 +742,8 @@ body {
 }
 
 .catalogPage__featuredWrap_filters {
+  position: relative;
+
   @include flexParams(flex, row, space-between, center);
 }
 
@@ -799,7 +800,7 @@ body {
 
 // filter
 .filter {
-  width: 360px;
+  //width: 360px;
   position: absolute;
   top: 0;
   //height: 132px;
@@ -813,6 +814,10 @@ body {
 }
 
 .filter .filter-summary__main-header {
+  @media (max-width: 767px) {
+    width: 15px;
+    height: 10px;
+  }
 }
 
 .filter[open] .filter-summary {
@@ -827,7 +832,11 @@ body {
 
 .filter-summary {
   display: block;
-  padding: 13px 255px 16px 16px;
+  padding: 0 255px 16px 0;
+
+  @media (max-width: 767px) {
+    padding-right: 200px;
+  }
 }
 
 .filter-summary::-webkit-details-marker {
@@ -892,6 +901,10 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
 
       &:hover {
         color: $brandPinkColor; //НЕ РАБОТАЕТ, ПОЧИНИТЬ БЫ
