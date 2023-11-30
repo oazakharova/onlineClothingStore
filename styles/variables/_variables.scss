@@ -6,6 +6,8 @@ $brandLightColor: #e8e8e8;
 
 $paddingNormal: 10px;
 
+$widthSite: 1140px;
+
 @mixin flexParams($displayFlex, $flexDirection, $justifyContent, $alignItems) {
   display: $displayFlex;
   flex-direction: $flexDirection;
