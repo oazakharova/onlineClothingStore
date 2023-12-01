@@ -1038,3 +1038,31 @@ body {
   padding-left: calc(50% -$widthSite/2);
   padding-right: calc(50% -$widthSite/2);
 }
+
+.productPage__featuredWrap .container {
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 81px 1fr;
+  grid-template-columns: 1fr;
+  margin: 24px auto 32px;
+
+  @media (min-width: 768px) {
+    grid-template-rows: 81px 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    .catalogPage__featuredWrap_filters {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featuredItem:last-child {
+    @media (max-width: 1599px) {
+      display: none;
+    }
+  }
+}
