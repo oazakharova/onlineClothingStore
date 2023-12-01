@@ -1042,13 +1042,13 @@ body {
 .productPage__featuredWrap .container {
   display: grid;
   gap: 16px;
-  grid-template-rows: 81px 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   margin: 24px auto 32px;
 
   @media (min-width: 768px) {
-    grid-template-rows: 81px 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 
     .catalogPage__featuredWrap_filters {
       grid-column-start: 1;
@@ -1064,5 +1064,101 @@ body {
     @media (max-width: 1599px) {
       display: none;
     }
+  }
+}
+
+.productPage__featuredWrap_main-image-wrap {
+  position: relative;
+  background-color: #f7f7f7;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  margin-bottom: 40px;
+}
+
+.productPage__featuredWrap_main-image {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: 768px) {
+    width: 466px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 597px;
+  }
+}
+
+.button-arrow-left,
+.button-arrow-right {
+  position: absolute;
+  top: calc(50% - 47px / 2);
+  border: none;
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 8px;
+
+  &:hover {
+    color: $brandPinkColor;
+  }
+}
+
+.button-arrow-left {
+  left: 0;
+}
+
+.button-arrow-right {
+  right: 0;
+}
+
+.productPage__featuredWrap .productPage_main-product-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  .productPage_main-product-section {
+    color: $brandPinkColor;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 12px;
+  }
+
+  .productPage_main-product-decorative-block {
+    background-color: $brandPinkColor;
+    height: 3px;
+    width: 63px;
+    margin-bottom: 12px;
+  }
+
+  .productPage_main-product-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+
+  .productPage_main-product-description {
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
+    max-width: 326px;
+  }
+
+  .productPage_main-product-price {
+    color: $brandPinkColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
   }
 }
