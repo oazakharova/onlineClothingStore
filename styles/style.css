@@ -876,7 +876,8 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-right: 8px; }
 
 .checkbox-item {
   position: relative;
