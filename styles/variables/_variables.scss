@@ -3,8 +3,11 @@
 $brandPinkColor: #f16d7f;
 $brandDarkColor: #222;
 $brandLightColor: #e8e8e8;
+$brandGreyColor: #6f6e6e;
 
 $paddingNormal: 10px;
+
+$widthSite: 1140px;
 
 @mixin flexParams($displayFlex, $flexDirection, $justifyContent, $alignItems) {
   display: $displayFlex;
