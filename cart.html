@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>cart</title>
+</head>
+
+<body>
+  <header class="mainHeader">
+    <div class="container">
+      <div class="mainHeader-left">
+        <a class="mainPageLink" href="index.html">
+          <img class="logoOfCompany" src="images/logoOfCompany.png" alt="logoOfCompany">
+        </a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="mainHeader-right">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-regular fa-user account hidden"></i>
+        <span class="cartWrap hidden">
+          <i class="fa-solid fa-cart-shopping cart "></i>
+          <span>5</span>
+        </span>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="newArrivalsWrap">
+    <div class="container">
+      <div class="newArrivalsWrap-header">
+        <a href="#" class="newArrivalsHeader">SHOPPING CART</a>
+      </div>
+
+    </div>
+  </div>
+
+  <main class="shoppingCartWrap">
+    <div class="container">
+      <div class="shoppingCartWrap__productsList">
+        <div class="userShoppingList">
+          <div class="userChoiсeItemWrap">
+            <img class="userChoiсeImage" src="images/catalog8.png" alt="you have chosen this product">
+            <div class="userChoiсeItemDescription">
+              <a class="userChoiсeName" href="#">MANGO PEOPLE T&#8209;SHIRT</a>
+              <div class="userChoiсePrice">
+                <div>Price: </div>
+                <div>$300</div>
+              </div>
+              <div class="userChoiсeColor">
+                <div>Color:</div>
+                <div>Red</div>
+              </div>
+              <div class="userChoiсeSize">
+                <div>Size:</div>
+                <div>Xl</div>
+              </div>
+              <div class="userChoiсeQuantity">
+                <div>Quantity:</div>
+                <div class="itemQuality">2</div>
+              </div>
+            </div>
+          </div>
+          <div class="userChoiсeItemWrap">
+            <img class="userChoiсeImage" src="images/catalog9.png" alt="you have chosen this product">
+            <div class="userChoiсeItemDescription">
+              <a class="userChoiсeName" href="#">MANGO PEOPLE T&#8209;SHIRT</a>
+              <div class="userChoiсePrice">
+                <div>Price: </div>
+                <div>$300</div>
+              </div>
+              <div class="userChoiсeColor">
+                <div>Color:</div>
+                <div>Red</div>
+              </div>
+              <div class="userChoiсeSize">
+                <div>Size:</div>
+                <div>Xl</div>
+              </div>
+              <div class="userChoiсeQuantity">
+                <div>Quantity:</div>
+                <div class="itemQuality">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shoppingCartButtonsWrap">
+          <button class="shoppingCartButton">CLEAR SHOPPING CART</button>
+          <button class="shoppingCartButton">CONTINUE SHOPPING</button>
+        </div>
+      </div>
+
+      <div class="shoppingCartWrap__shippingInfoWrap">
+        <div class="shoppingCartWrap__shippingInfo">
+          <h2>SHIPPING ADRESS</h2>
+          <input class="shippingInfoInput" type="text" id="country" name="country" placeholder="Country" />
+          <input class="shippingInfoInput" type="text" id="state" name="state" placeholder="State" />
+          <input class="shippingInfoInput" type="text" id="zip" name="zip" placeholder="Postcode / Zip" />
+          <button>GET A QUOTE</button>
+        </div>
+        <div class="shoppingCartWrap__totalInfoWrap">
+          <div class="fullTotalInfoWrap">
+            <div class="subtotalWrap">
+              <div>SUB TOTAL</div>
+              <div>$900</div>
+            </div>
+            <div class="grandTotalWrap">
+              <div>GRAND TOTAL</div>
+              <div>$900</div>
+            </div>
+          </div>
+          <div class="checkoutButtonWrap">
+            <button class="checkoutButton">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="subscribeWrap">
+    <div class="container">
+      <section class="subscribeFeedback">
+        <img src="images/subscribePhoto.png" alt="subscribePhoto">
+        <div class="subscribePhotoDescription">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a
+            pulvinar purus condimentum</span>“
+        </div>
+      </section>
+
+      <section class="subscribeForm">
+        <h4 class="subscribeTitle">SUBSCRIBE</h4>
+        <div class="subscribeSubtitle">FOR OUR NEWLETTER AND PROMOTION</div>
+        <form action="#">
+          <input class="subscribeInput" type="email" value="Enter Your Email">
+          <button class="subscribeButton">Subscribe</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <footer class="mainFooter">
+    <div class="container">
+      <div class="socialsWrap">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="copyInfo">&copy; Brand All Rights Reserved.</div>
+    </div>
+  </footer>
+</body>
+
+</html>
