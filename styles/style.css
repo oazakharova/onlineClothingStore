@@ -309,6 +309,9 @@ body {
     .allProductsBtn {
       margin-top: 48px;
       margin-bottom: 95px; } }
+  .allProductsBtn:hover {
+    -webkit-box-shadow: 0 0 8px #f16d7f;
+            box-shadow: 0 0 8px #f16d7f; }
 
 .featuredTitle {
   color: #222;
@@ -375,6 +378,9 @@ body {
   width: 138px;
   height: 44px;
   background: none; }
+  .btnAddToCart:hover {
+    -webkit-box-shadow: 0 0 8px #fff;
+            box-shadow: 0 0 8px #fff; }
 
 .btnAddToCart__icon {
   margin-right: 11px; }
@@ -573,6 +579,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   padding: 6px 7px; }
+  .subscribeButton:hover {
+    -webkit-box-shadow: 0 0 8px #f16d7f;
+            box-shadow: 0 0 8px #f16d7f; }
 
 .mainFooter {
   background: #222224; }
@@ -1298,6 +1307,9 @@ body {
       font-size: 14px;
       padding: 17px 40px;
       width: 225px; } }
+  .shoppingCartButton:hover {
+    -webkit-box-shadow: 0 0 8px #a4a4a4;
+            box-shadow: 0 0 8px #a4a4a4; }
 
 .shoppingCartWrap__shippingInfoWrap {
   width: 94%;
@@ -1335,6 +1347,9 @@ body {
     font-weight: 400;
     line-height: normal;
     padding: 11px 21px; }
+    .shoppingCartWrap__shippingInfo button:hover {
+      -webkit-box-shadow: 0 0 8px #a4a4a4;
+              box-shadow: 0 0 8px #a4a4a4; }
 
 .shippingInfoInput {
   width: 94%;
@@ -1428,5 +1443,8 @@ body {
   border: none;
   white-space: nowrap;
   width: 273px; }
+  .checkoutButton:hover {
+    -webkit-box-shadow: 0 0 8px #f16d7f;
+            box-shadow: 0 0 8px #f16d7f; }
 
 /*# sourceMappingURL=style.css.map */
