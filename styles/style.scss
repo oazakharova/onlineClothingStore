@@ -352,6 +352,8 @@ body {
   background-color: #f8f8f8;
   margin-left: 8px;
   margin-right: 8px;
+
+  position: relative;
 }
 
 .featuredItemLink {
@@ -360,7 +362,6 @@ body {
   width: 100%;
   text-decoration: none;
   margin-bottom: 25px;
-  position: relative;
 
   img {
     width: 100%;
@@ -374,11 +375,27 @@ body {
 
 .featuredItemLink:hover {
   background-color: #000;
-  pointer-events: none;
 
   img {
     opacity: 0.5;
   }
+}
+
+.btnAddToCartWrap {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  left: calc(50% - 69px);
+  top: calc(50% - 22px);
+}
+
+.btnAddToCartLink {
+  pointer-events: all;
+  display: flex;
+  position: absolute;
+  // left: calc(50% - 69px);
+  // top: calc(50% - 22px);
 }
 
 .btnAddToCart {
@@ -393,6 +410,7 @@ body {
   width: 138px;
   height: 44px;
   background: none;
+  pointer-events: all;
 
   &:hover {
     box-shadow: 0 0 8px #fff;
