@@ -24,17 +24,10 @@
       <div class="mainHeader-right">
         <i class="fa-solid fa-bars"></i>
         <i class="fa-regular fa-user account hidden"></i>
-        <span class="cartWrap hidden">
+        <a href="cart.html" class="cartWrap hidden">
           <i class="fa-solid fa-cart-shopping cart "></i>
-          <span>5</span>
-        </span>
-        <!-- <nav>
-            <ul>
-                <li><a>...</a></li>
-                <li><a>...</a></li>
-                <li><a>...</a></li>
-            </ul>
-        </nav> -->
+          <span>4</span>
+        </a>
       </div>
     </div>
   </header>
@@ -65,34 +58,95 @@
   <main class="featuredWrap catalogPage__featuredWrap">
     <div class="container">
       <div class="catalogPage__featuredWrap_filters">
-        <button class="catalogPage__featuredWrap_filters_mainFilterButton">
-          <span>FILTERS</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="25" viewBox="0 0 38 25" fill="none">
-            <path
-              d="M2.08333 25H10.4167C11.5625 25 12.5 24.0625 12.5 22.9167C12.5 21.7708 11.5625 20.8333 10.4167 20.8333H2.08333C0.9375 20.8333 0 21.7708 0 22.9167C0 24.0625 0.9375 25 2.08333 25ZM0 2.08333C0 3.22917 0.9375 4.16667 2.08333 4.16667H35.4167C36.5625 4.16667 37.5 3.22917 37.5 2.08333C37.5 0.9375 36.5625 0 35.4167 0H2.08333C0.9375 0 0 0.9375 0 2.08333ZM2.08333 14.5833H22.9167C24.0625 14.5833 25 13.6458 25 12.5C25 11.3542 24.0625 10.4167 22.9167 10.4167H2.08333C0.9375 10.4167 0 11.3542 0 12.5C0 13.6458 0.9375 14.5833 2.08333 14.5833Z"
-              fill="black" />
-          </svg>
-        </button>
+        <div class="filter-sort">
+          <details class="catalogPage__featuredWrap_filters_mainFilterButton filter">
+            <summary class="filter-summary">
+              <span class="filter-summary__main-header">FILTER</span>
+              <svg class="filter-summary__svg" xmlns="http://www.w3.org/2000/svg" width="37.5" height="25"
+                viewBox="0 0 38 25" fill="black">
+                <path
+                  d="M2.08333 25H10.4167C11.5625 25 12.5 24.0625 12.5 22.9167C12.5 21.7708 11.5625 20.8333 10.4167 20.8333H2.08333C0.9375 20.8333 0 21.7708 0 22.9167C0 24.0625 0.9375 25 2.08333 25ZM0 2.08333C0 3.22917 0.9375 4.16667 2.08333 4.16667H35.4167C36.5625 4.16667 37.5 3.22917 37.5 2.08333C37.5 0.9375 36.5625 0 35.4167 0H2.08333C0.9375 0 0 0.9375 0 2.08333ZM2.08333 14.5833H22.9167C24.0625 14.5833 25 13.6458 25 12.5C25 11.3542 24.0625 10.4167 22.9167 10.4167H2.08333C0.9375 10.4167 0 11.3542 0 12.5C0 13.6458 0.9375 14.5833 2.08333 14.5833Z" />
+              </svg>
+            </summary>
+            <details class="filter-item">
+              <summary class="filter-item__header">category</summary>
+              <ul class="filter-item__list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Sweaters & Knits</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Tanks</a></li>
+              </ul>
+            </details>
+            <details class="filter-item">
+              <summary class="filter-item__header">brand</summary>
+              <ul class="filter-item__list">
+                <li><a href="#">12storeez</a></li>
+                <li><a href="#">2mood</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Furla</a></li>
+                <li><a href="#">NewBalance</a></li>
+                <li><a href="#">Pinko</a></li>
+                <li><a href="#">Ray-Ban</a></li>
+                <li><a href="#">TopTop</a></li>
+              </ul>
+            </details>
+            <details class="filter-item">
+              <summary class="filter-item__header">designer</summary>
+              <ul class="filter-item__list">
+                <li><a href="#">Gucci</a></li>
+                <li><a href="#">Lera Nena</a></li>
+                <li><a href="#">Marc Jacobs</a></li>
+                <li><a href="#">Ralph Lauren</a></li>
+                <li><a href="#">Valentino</a></li>
+              </ul>
+            </details>
+          </details>
+        </div>
         <div class="catalogPage__featuredWrap_filters_keyFilters">
-          <button>
+          <div class="key-filter-wrap">
             <span>TRENDING NOW</span>
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <button>
-            <span>SIZE</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <button>
+          </div>
+          <div class="key-filter-wrap">
+            <div class="checkbox-item">
+              <span>SIZE</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="checkbox-item__label-wrap">
+              <label for="xs">
+                <input type="checkbox" id="xs">XS
+              </label>
+              <label for="s">
+                <input type="checkbox" id="s">S
+              </label>
+              <label for="m">
+                <input type="checkbox" id="m">M
+              </label>
+              <label for="l">
+                <input type="checkbox" id="l">L
+              </label>
+            </div>
+          </div>
+          <div class="key-filter-wrap">
             <span>PRICE</span>
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
         </div>
       </div>
 
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/1.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/1.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -100,8 +154,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -109,9 +163,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog2.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog2.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -119,8 +175,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -128,9 +184,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog3.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog3.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -138,8 +196,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -147,9 +205,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog4.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog4.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -157,8 +217,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -166,9 +226,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog5.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog5.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -176,8 +238,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -185,9 +247,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog6.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog6.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -195,8 +259,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -204,9 +268,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog7.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog7.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -214,8 +280,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -223,9 +289,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog8.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog8.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -233,8 +301,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
@@ -242,9 +310,11 @@
         <div class="featuredItemPrice">$52.00</div>
       </article>
       <article class="featuredItem">
-        <a class="featuredItemLink" href="#">
-          <img src="images/catalog9.png" alt="item">
-          <button class="btnAddToCart">
+        <a class="featuredItemLink" href="product.html">
+          <img src="images/catalog9.png" alt="item1">
+        </a>
+        <div class="btnAddToCartWrap">
+          <a href="111" class="btnAddToCart">
             <svg class="btnAddToCart__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="25"
               viewBox="0 0 27 25" fill="none">
               <path
@@ -252,8 +322,8 @@
                 fill="white" />
             </svg>
             <div class="btnAddToCart__call">Add to Cart</div>
-          </button>
-        </a>
+          </a>
+        </div>
         <h3 class="featuredItemName">ELLERY X M'O CAPSULE</h3>
         <div class="featuredItemDescription">Known for her sculptural takes on traditional tailoring, Australian
           arbiter of cool Kym Ellery teams up
