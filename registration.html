@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>registration</title>
+</head>
+
+<body>
+  <header class="mainHeader">
+    <div class="container">
+      <div class="mainHeader-left">
+        <a class="mainPageLink" href="index.html">
+          <img class="logoOfCompany" src="images/logoOfCompany.png" alt="logoOfCompany">
+        </a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="mainHeader-right">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-regular fa-user account hidden"></i>
+        <a href="cart.html" class="cartWrap hidden">
+          <i class="fa-solid fa-cart-shopping cart "></i>
+          <span>4</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="newArrivalsWrap">
+    <div class="container">
+      <div class="newArrivalsWrap-header">
+        <a href="#" class="newArrivalsHeader">REGISTRATION</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="registration-wrap">
+    <div class="container">
+      <div class="registration-wrap__user-info-wrap">
+        <form action="#">
+          <h2 class="registration-wrap__header">Your Name</h2>
+          <input type="text" class="registration-wrap__input registration-wrap__input_text"
+            placeholder="First Name"><br>
+          <input type="text" class="registration-wrap__input registration-wrap__input_text" placeholder="Last Name"><br>
+          <div class="registration-wrap__radio-wrap">
+            <input type="radio" class="registration-wrap__input registration-wrap__input_radio" name="gender"
+              value="male">
+            <p class="registration-wrap__radio-hint">Male</p>
+            <input type="radio" class="registration-wrap__input registration-wrap__input_radio" name="gender"
+              value="female">
+            <p class="registration-wrap__radio-hint">Female</p>
+            <input type="radio" class="registration-wrap__input registration-wrap__input_radio" name="gender"
+              value="other">
+            <p class="registration-wrap__radio-hint">Other</p>
+          </div>
+
+          <h2 class="registration-wrap__header">Login details</h2>
+          <input type="email" class="registration-wrap__input registration-wrap__input_email" name="Email"
+            placeholder="email"><br>
+          <input type="password" class="registration-wrap__input registration-wrap__input_password" name="Password"
+            placeholder="password">
+          <div class="registration-wrap__password-hint">Please use 8 or more characters,
+            with at least 1 number and a mixture of uppercase and lowercase letters
+          </div>
+        </form>
+        <button class="registration-wrap__button-join-now">
+          <div>JOIN NOW</div>
+          <div><i class="fa-solid fa-arrow-right-long"></i></div>
+        </button>
+      </div>
+
+      <article>
+        <h2 class="registration-wrap__header">LOYALTY HAS ITS PERKS</h2>
+        <div class="registration-wrap__loyalty-info">
+          Get in on the loyalty program where you can earn points and unlock serious perks.
+          Starting with these as soon as you join:
+        </div>
+        <div class="registration-wrap__loyalty-item-wrap">
+          <div><i class="fa-solid fa-check"></i></div>
+          <div>15% off welcome offer</div>
+        </div>
+        <div class="registration-wrap__loyalty-item-wrap">
+          <div><i class="fa-solid fa-check"></i></div>
+          <div>Free shipping, returns and exchanges on all order</div>
+        </div>
+        <div class="registration-wrap__loyalty-item-wrap">
+          <div><i class="fa-solid fa-check"></i></div>
+          <div>$10 off a purchase on your birthday</div>
+        </div>
+        <div class="registration-wrap__loyalty-item-wrap">
+          <div><i class="fa-solid fa-check"></i></div>
+          <div>Early access to products</div>
+        </div>
+        <div class="registration-wrap__loyalty-item-wrap">
+          <div><i class="fa-solid fa-check"></i></div>
+          <div>Exclusive offers & rewards</div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+
+
+  <div class="subscribeWrap">
+    <div class="container">
+      <section class="subscribeFeedback">
+        <img src="images/subscribePhoto.png" alt="subscribePhoto">
+        <div class="subscribePhotoDescription">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a
+            pulvinar purus condimentum</span>“
+        </div>
+      </section>
+
+      <section class="subscribeForm">
+        <h4 class="subscribeTitle">SUBSCRIBE</h4>
+        <div class="subscribeSubtitle">FOR OUR NEWLETTER AND PROMOTION</div>
+        <form action="#">
+          <input class="subscribeInput" type="email" value="Enter Your Email">
+          <button class="subscribeButton">Subscribe</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <footer class="mainFooter">
+    <div class="container">
+      <div class="socialsWrap">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="copyInfo">&copy; Brand All Rights Reserved.</div>
+    </div>
+  </footer>
+</body>
+
+</html>

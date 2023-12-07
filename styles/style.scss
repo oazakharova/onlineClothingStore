@@ -1586,3 +1586,141 @@ body {
     box-shadow: 0 0 8px $brandPinkColor;
   }
 }
+
+.registration-wrap .container {
+  padding: 40px 9px 96px;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) and (min-width: 1599px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.registration-wrap__user-info-wrap {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: 1600px) {
+    margin-right: 128px;
+  }
+}
+
+.registration-wrap__header {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.registration-wrap__input {
+  border: 1px solid #a4a4a4;
+  background: none;
+  max-width: 360px;
+}
+
+.registration-wrap__input_text,
+.registration-wrap__input_email,
+.registration-wrap__input_password {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.registration-wrap__radio-wrap {
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 34px;
+}
+
+.registration-wrap__input_radio {
+  margin-right: 10px;
+}
+.registration-wrap__radio-hint {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.registration-wrap__input_email {
+}
+.registration-wrap__input_password {
+}
+
+.registration-wrap__password-hint {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 39px;
+}
+
+.registration-wrap__button-join-now {
+  display: flex;
+  padding: 17px 29px;
+  background-color: $brandPinkColor;
+  border: 1px solid $brandPinkColor;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  div:first-child {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
+.registration-wrap__loyalty-info {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+
+.registration-wrap__loyalty-item-wrap {
+  display: flex;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  div:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  div:first-child {
+    margin-right: 23px;
+  }
+}

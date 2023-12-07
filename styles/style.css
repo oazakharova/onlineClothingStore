@@ -1482,4 +1482,131 @@ body {
     -webkit-box-shadow: 0 0 8px #f16d7f;
             box-shadow: 0 0 8px #f16d7f; }
 
+.registration-wrap .container {
+  padding: 40px 9px 96px;
+  max-width: 1140px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 768px) {
+    .registration-wrap .container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+  @media (min-width: 768px) and (min-width: 1599px) {
+    .registration-wrap .container {
+      padding-left: 16px;
+      padding-right: 16px; } }
+
+.registration-wrap__user-info-wrap {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .registration-wrap__user-info-wrap {
+      margin-right: 22px; } }
+  @media (min-width: 1600px) {
+    .registration-wrap__user-info-wrap {
+      margin-right: 128px; } }
+
+.registration-wrap__header {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px; }
+
+.registration-wrap__input {
+  border: 1px solid #a4a4a4;
+  background: none;
+  max-width: 360px; }
+
+.registration-wrap__input_text,
+.registration-wrap__input_email,
+.registration-wrap__input_password {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  width: 100%; }
+
+.registration-wrap__radio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 34px; }
+
+.registration-wrap__input_radio {
+  margin-right: 10px; }
+
+.registration-wrap__radio-hint {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-right: 20px; }
+
+.registration-wrap__password-hint {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 39px; }
+
+.registration-wrap__button-join-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 17px 29px;
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+  .registration-wrap__button-join-now div:first-child {
+    margin-right: 20px; }
+  @media (max-width: 767px) {
+    .registration-wrap__button-join-now {
+      margin-bottom: 40px; } }
+
+.registration-wrap__loyalty-info {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 22px; }
+
+.registration-wrap__loyalty-item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal; }
+  .registration-wrap__loyalty-item-wrap div:not(:last-child) {
+    margin-bottom: 16px; }
+  .registration-wrap__loyalty-item-wrap div:first-child {
+    margin-right: 23px; }
+
 /*# sourceMappingURL=style.css.map */
