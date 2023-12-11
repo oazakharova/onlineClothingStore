@@ -49,13 +49,116 @@ body {
   }
 }
 
+.burger-menu__nav {
+  position: absolute;
+  left: -100%;
+  top: 73px;
+  transition: left 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 15;
+
+  background-color: #fff;
+  box-shadow: 0 0 5px black;
+
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 232px;
+    max-height: 639px;
+    top: 77px;
+    transition: left 0.5s;
+  }
+}
+
+#burger-menu {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+
+  &:checked ~ .burger-menu__nav {
+    left: 0;
+
+    @media (min-width: 768px) {
+      left: 70vw;
+    }
+  }
+}
+
+.burger-menu_li {
+  list-style-type: none;
+  margin: 1px auto 2px 12px;
+}
+
+.burger-menu__link {
+  text-decoration: none;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: $paddingNormal;
+
+  &:hover {
+    font-size: 15px;
+    box-shadow: 0 0 5px $brandPinkColor;
+  }
+}
+
+.burger-menu__list {
+  margin-bottom: 20px;
+}
+
+.burger-menu__list-title {
+  margin: 37px auto 24px 0;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.burger-menu__category {
+  color: $brandPinkColor;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.burger-menu__close-label {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
+  }
+}
+
+.mainHeader-left {
+  @include flexParams(flex, row, center, center);
+}
+
 .mainHeader i {
   color: $brandLightColor;
   font-size: x-large;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
+  }
 }
 
 .mainPageLink {
   text-decoration: none;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
+  }
 }
 
 .logoOfCompany {
@@ -169,6 +272,10 @@ body {
     display: flex;
     justify-content: center;
 
+    @media (min-width: 1600px) {
+      justify-content: flex-end;
+    }
+
     img {
       height: inherit;
       display: block;
@@ -224,6 +331,11 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
+  }
 
   h1 {
     display: block;
@@ -356,6 +468,11 @@ body {
   margin-right: auto;
   min-width: 250px;
   position: relative;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
+  }
 
   @media (max-width: 400px) {
     width: 288px;
@@ -420,7 +537,7 @@ body {
 }
 
 .btnAddToCart {
-  display: FLEX;
+  display: flex;
   position: absolute;
   justify-content: space-between;
   align-items: center;
@@ -664,13 +781,20 @@ body {
     }
   }
 
-  .socialsWrap i {
+  .socialLink {
     color: #000;
     height: 32px;
     width: 32px;
     padding: 9px;
     margin: 40px 7px;
     background: #fff;
+    transition-duration: $transitionDurationNormal;
+
+    &:hover {
+      transform: $transformForHoverNormal;
+      background-color: $brandPinkColor;
+      color: white;
+    }
   }
 }
 
@@ -1103,7 +1227,7 @@ body {
   @media (min-width: 768px) {
     margin-bottom: 128px;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
     .catalogPage__featuredWrap_filters {
       grid-column-start: 1;
@@ -1173,9 +1297,13 @@ body {
   font-weight: 300;
   line-height: normal;
 
+  @media (min-width: 768px) {
+    grid-column: 1/-1;
+  }
+
   @media (min-width: 1600px) {
     grid-column: 1/-1;
-    margin-top: -93px;
+    transform: translateY(-93px);
     z-index: 10;
     background-color: white;
     border-left: 1px solid #eaeaea;
@@ -1247,7 +1375,7 @@ body {
     border-bottom: 1px solid #eaeaea;
     margin-left: 8px;
     margin-right: 8px;
-    margin-top: -17px;
+    transform: translateY(-110px);
   }
 
   & > svg {
@@ -1273,6 +1401,10 @@ body {
   padding-left: 24px;
   padding-right: 57px;
   width: max-content;
+
+  &:hover {
+    box-shadow: 0px 5px 10px 0px $brandPinkColor;
+  }
 
   .btnAddToCart__icon path {
     fill: $brandPinkColor;
@@ -1407,6 +1539,16 @@ body {
     @media (min-width: 768px) {
       font-size: 18px;
     }
+  }
+}
+
+.toCloseButton {
+  padding: $paddingNormal;
+  margin: 12px 10px auto 27px;
+  transition-duration: $transitionDurationNormal;
+
+  &:hover {
+    transform: $transformForHoverNormal;
   }
 }
 
@@ -1689,6 +1831,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  &:hover {
+    box-shadow: 0 0 8px $brandPinkColor;
+  }
 
   div:first-child {
     margin-right: 20px;
