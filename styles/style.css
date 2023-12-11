@@ -269,13 +269,7 @@ body {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
-  @media (min-width: 768px) and (min-width: 1600px) {
-    .brandModelPicture {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; } }
-@media (min-width: 768px) {
+            justify-content: center; }
     .brandModelPicture img {
       height: inherit;
       display: block; } }
@@ -287,6 +281,12 @@ body {
 
   .brandName {
     margin-left: 60px; } }
+@media (min-width: 1600px) {
+  .brandModelPicture {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
+
 .mainSection .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -544,6 +544,7 @@ body {
   margin-right: 11px; }
 
 .btnAddToCart__call {
+  display: block;
   color: #fff;
   font-size: 14px;
   font-weight: 400; }
@@ -1735,7 +1736,9 @@ body {
   .registration-wrap__button-join-now:hover {
     -webkit-box-shadow: 0 0 8px #f16d7f;
             box-shadow: 0 0 8px #f16d7f; }
-  .registration-wrap__button-join-now div:first-child {
+  .registration-wrap__button-join-now span {
+    display: block; }
+  .registration-wrap__button-join-now span:first-child {
     margin-right: 20px; }
   @media (max-width: 767px) {
     .registration-wrap__button-join-now {

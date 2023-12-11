@@ -272,10 +272,6 @@ body {
     display: flex;
     justify-content: center;
 
-    @media (min-width: 1600px) {
-      justify-content: flex-end;
-    }
-
     img {
       height: inherit;
       display: block;
@@ -290,6 +286,12 @@ body {
 
   .brandName {
     margin-left: 60px;
+  }
+}
+
+.brandModelPicture {
+  @media (min-width: 1600px) {
+    justify-content: flex-end;
   }
 }
 
@@ -559,6 +561,7 @@ body {
 }
 
 .btnAddToCart__call {
+  display: block;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -1836,7 +1839,11 @@ body {
     box-shadow: 0 0 8px $brandPinkColor;
   }
 
-  div:first-child {
+  span {
+    display: block;
+  }
+
+  span:first-child {
     margin-right: 20px;
   }
 
