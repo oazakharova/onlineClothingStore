@@ -21,8 +21,49 @@
         </a>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <div class="mainHeader-right">
-        <i class="fa-solid fa-bars"></i>
+      <nav class="mainHeader-right">
+        <input id="burger-menu" type="checkbox">
+        <label for="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="burger-menu__nav">
+          <div class="burger-menu__list-wrap">
+            <h2 class="burger-menu__list-title">MENU</h2>
+            <div class="burger-menu__list">
+              <h3 class="burger-menu__category">MEN</h3>
+              <ul class="burger-menu__ul">
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Accessories</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Bags</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Denim</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="burger-menu__list">
+              <h3 class="burger-menu__category">WOMEN</h3>
+              <ul class="burger-menu__ul">
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Accessories</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Jackets & Coats</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Polos</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">T-Shirts</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Shirts</a></li>
+              </ul>
+            </div>
+            <div class="burger-menu__list">
+              <h3 class="burger-menu__category">KIDS</h3>
+              <ul class="burger-menu__ul">
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Accessories</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Jackets & Coats</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Polos</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">T-Shirts</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Shirts</a></li>
+                <li class="burger-menu_li"><a class="burger-menu__link" href="#">Bags</a></li>
+              </ul>
+            </div>
+          </div>
+          <label class="burger-menu__close-label" for="burger-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </nav>
         <a href="registration.html" class="registration-link-wrap account hidden">
           <i class="fa-regular fa-user  "></i>
         </a>
@@ -30,7 +71,7 @@
           <i class="fa-solid fa-cart-shopping cart "></i>
           <span>4</span>
         </a>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -402,12 +443,12 @@
 
   <footer class="mainFooter">
     <div class="container">
-      <div class="socialsWrap">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
+      <nav class="socialsWrap">
+        <a href="#"><i class="fa-brands fa-facebook-f socialLink"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram socialLink"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p socialLink"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter socialLink"></i></a>
+      </nav>
       <div class="copyInfo">&copy; Brand All Rights Reserved.</div>
     </div>
   </footer>

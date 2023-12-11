@@ -9,6 +9,9 @@ $paddingNormal: 10px;
 
 $widthSite: 1140px;
 
+$transitionDurationNormal: 0.5s;
+$transformForHoverNormal: scale(1.05, 1.05);
+
 @mixin flexParams($displayFlex, $flexDirection, $justifyContent, $alignItems) {
   display: $displayFlex;
   flex-direction: $flexDirection;
