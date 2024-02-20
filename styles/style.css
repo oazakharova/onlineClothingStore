@@ -485,7 +485,7 @@ body {
     justify-content: center;
     gap: 46px;
     padding: 48px 14px; }
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       .advantageWrap .container {
         grid-template-columns: repeat(3, 1fr); } }
 
@@ -532,7 +532,7 @@ body {
     flex-direction: column;
     padding-left: 8px;
     padding-right: 8px; }
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       .subscribeWrap .container {
         width: 1140px;
         height: 448px;
@@ -586,7 +586,7 @@ body {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-bottom: 110px; }
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     .subscribeInput {
       margin-bottom: 0; } }
 

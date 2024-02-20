@@ -615,7 +615,7 @@ body {
     gap: 46px;
     padding: 48px 14px;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -677,7 +677,7 @@ body {
     padding-left: 8px;
     padding-right: 8px;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       width: 1140px;
       height: 448px;
       margin: 0 auto;
@@ -748,7 +748,7 @@ body {
   border-bottom-left-radius: 20px;
   margin-bottom: 110px;
 
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
