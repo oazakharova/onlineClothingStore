@@ -428,6 +428,11 @@ body {
   padding: 15px 39px;
   margin: 40px auto 96px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: max-content;
 
   @media (min-width: 768px) {
     grid-column: 1/-1;
@@ -557,7 +562,8 @@ body {
 }
 
 .btnAddToCart__icon {
-  margin-right: 11px;
+  color: white;
+  font-size: 1.1rem;
 }
 
 .btnAddToCart__call {
@@ -574,6 +580,7 @@ body {
   margin-bottom: 13px;
   padding-left: 18px;
   padding-right: 18px;
+  text-decoration: none;
 }
 
 .featuredItemDescription {
@@ -608,7 +615,7 @@ body {
     gap: 46px;
     padding: 48px 14px;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -670,7 +677,7 @@ body {
     padding-left: 8px;
     padding-right: 8px;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
       width: 1140px;
       height: 448px;
       margin: 0 auto;
@@ -741,7 +748,7 @@ body {
   border-bottom-left-radius: 20px;
   margin-bottom: 110px;
 
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -1409,9 +1416,9 @@ body {
     box-shadow: 0px 5px 10px 0px $brandPinkColor;
   }
 
-  .btnAddToCart__icon path {
-    fill: $brandPinkColor;
-  }
+  // .btnAddToCart__icon path {
+  //   fill: $brandPinkColor;
+  // }
   .btnAddToCart__call {
     color: $brandPinkColor;
   }
@@ -1538,6 +1545,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 4.5rem;
 
     @media (min-width: 768px) {
       font-size: 18px;
@@ -1810,10 +1818,10 @@ body {
   margin-right: 20px;
 }
 
-.registration-wrap__input_email {
-}
-.registration-wrap__input_password {
-}
+// .registration-wrap__input_email {
+// }
+// .registration-wrap__input_password {
+// }
 
 .registration-wrap__password-hint {
   color: #b1b1b1;
