@@ -334,6 +334,7 @@ body {
   padding: 15px 39px;
   margin: 40px auto 96px;
   text-decoration: none;
+  text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -473,6 +474,102 @@ body {
   margin-bottom: 20px;
   padding-left: 18px;
   padding-right: 18px; }
+
+.previewCartWrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transition: all 0.3s linear;
+  z-index: 2;
+  visibility: hidden; }
+
+.transparentBcg {
+  visibility: visible; }
+
+.cart {
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: scroll;
+  background: #f16d7f;
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  transform: translateX(100%); }
+  @media (min-width: 768px) {
+    .cart {
+      width: 30vw;
+      min-width: 450px; } }
+
+.showCart {
+  transform: translateX(0); }
+
+.closeСart {
+  font-size: 1.5rem;
+  background-color: #f16d7f;
+  cursor: pointer; }
+
+.close-cart-logo {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 4px; }
+
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.previewCartFooter {
+  margin-top: 2rem;
+  text-align: center; }
+  .previewCartFooter h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem; }
+
+.selectedItemWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .selectedItemWrap {
+      flex-direction: column;
+      align-items: center; } }
+  .selectedItemWrap img {
+    max-height: 200px;
+    max-width: 100%; }
+  .selectedItemWrap .userChoiсePrice,
+  .selectedItemWrap .userChoiсeColor,
+  .selectedItemWrap .userChoiсeSize,
+  .selectedItemWrap .userChoiсeQuantity {
+    font-size: 14px; }
+  .selectedItemWrap .userChoiсePrice div:last-child {
+    color: white; }
+  .selectedItemWrap .toCloseButton {
+    padding: 5px 10px;
+    margin: 0; }
+  .selectedItemWrap .itemQuality {
+    height: 20px;
+    font-size: 14px; }
+
+.selectedItemWrapDescription {
+  color: white;
+  width: 100%;
+  margin-left: 10px; }
+  .selectedItemWrapDescription a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 0; }
+  .selectedItemWrapDescription .userChoiсePrice {
+    margin-top: 0; }
+  @media (max-width: 767px) {
+    .selectedItemWrapDescription .userChoiсeQuantity .itemQuality {
+      max-width: 3rem; } }
 
 .advantageWrap {
   background: #222224; }

@@ -428,6 +428,7 @@ body {
   padding: 15px 39px;
   margin: 40px auto 96px;
   text-decoration: none;
+  text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -600,6 +601,132 @@ body {
   margin-bottom: 20px;
   padding-left: 18px;
   padding-right: 18px;
+}
+
+.previewCartWrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transition: all 0.3s linear;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+.cart {
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: scroll;
+  background: $brandPinkColor;
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+
+  @media (min-width: 768px) {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+.showCart {
+  transform: translateX(0);
+}
+
+.closeСart {
+  font-size: 1.5rem;
+  background-color: $brandPinkColor;
+  cursor: pointer;
+}
+
+.close-cart-logo {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.previewCartFooter {
+  margin-top: 2rem;
+  text-align: center;
+
+  h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+}
+
+.selectedItemWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .userChoiсePrice,
+  .userChoiсeColor,
+  .userChoiсeSize,
+  .userChoiсeQuantity {
+    font-size: 14px;
+  }
+
+  .userChoiсePrice div:last-child {
+    color: white;
+  }
+
+  .toCloseButton {
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .itemQuality {
+    height: 20px;
+    font-size: 14px;
+  }
+}
+
+.selectedItemWrapDescription {
+  color: white;
+  width: 100%;
+  margin-left: 10px;
+
+  a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  .userChoiсePrice {
+    margin-top: 0;
+  }
+
+  .userChoiсeQuantity .itemQuality {
+    @media (max-width: 767px) {
+      max-width: 3rem;
+    }
+  }
 }
 
 .advantageWrap {
