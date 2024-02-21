@@ -1,5 +1,7 @@
 "use strict";
 
+// заполнение раздела товарами из json
+
 const dataProductsJSON = `[
   {
     "productId": "1",
@@ -91,6 +93,7 @@ const featuredWrapContainerEl = document
 dataProducts.forEach((el) => {
   const featuredItemEl = document.createElement("article");
   featuredItemEl.classList.add("featuredItem");
+  featuredItemEl.id = el.productId;
   featuredWrapContainerEl.append(featuredItemEl);
 
   const featuredItemLinkEl = document.createElement("a");
@@ -107,9 +110,9 @@ dataProducts.forEach((el) => {
   btnAddToCartWrapEl.classList.add("btnAddToCartWrap");
   featuredItemEl.append(btnAddToCartWrapEl);
 
-  const btnAddToCartEl = document.createElement("a");
+  const btnAddToCartEl = document.createElement("button");
   btnAddToCartEl.classList.add("btnAddToCart");
-  btnAddToCartEl.href = "cart.html";
+  // btnAddToCartEl.href = "cart.html";
   btnAddToCartWrapEl.append(btnAddToCartEl);
 
   const btnAddToCartIconEl = document.createElement("i");
@@ -149,4 +152,71 @@ dataProducts.forEach((el) => {
   featuredItemPriceValueEl.classList.add("featuredItemPriceValue");
   featuredItemPriceValueEl.textContent = el.productPrice;
   featuredItemPriceEl.append(featuredItemPriceValueEl);
+});
+
+const btnAddToCartElements = document.querySelectorAll(".btnAddToCart");
+btnAddToCartElements.forEach((el) => {
+  el.addEventListener("click", () => {
+    // открытие превью корзины при добавлении товара в корзину,
+    // так как на лого корзины в хедере пока ссылка на страницу с корзиной
+    cartWrapEl.classList.add("transparentBcg");
+    cartEl.classList.add("showCart");
+
+    // запоминание товара, по кнопке которого был клик
+    const selectedItemWrapId = el.parentElement.parentElement.id;
+
+    const selectedProduct = dataProducts.find((o) => {
+      if (o.productId === selectedItemWrapId) {
+        return o;
+      }
+    });
+    const previewCartСontentEl = document.querySelector(".previewCartСontent");
+
+    // добавление товара в корзину
+    const selectedItem = document.createElement("div");
+    selectedItem.innerHTML = `
+    <div class="selectedItemWrap" id="${selectedProduct.productId}">
+          <i class="fa-solid fa-xmark toCloseButton"></i>
+          <img src="${selectedProduct.productImage}" alt="selected item">
+          <div class="selectedItemWrapDescription">
+            <a class="featuredItemLink" href="#">
+              ${selectedProduct.productName}
+            </a>
+            <div class="userChoiсePrice">
+              <div>Price: </div>
+              <div>$${selectedProduct.productPrice}</div>
+            </div>
+            <div class="userChoiсeColor">
+              <div>Color:</div>
+              <div>${selectedProduct.productColor}</div>
+            </div>
+            <div class="userChoiсeSize">
+              <div>Size:</div>
+              <div>${selectedProduct.productSize}</div>
+            </div>
+            <div class="userChoiсeQuantity">
+              <div>Quantity:</div>
+              <input type="number" class="itemQuality" min="1" max="${selectedProduct.productQuantity}" value="1">
+            </div>
+          </div>
+        </div>
+    `;
+    previewCartСontentEl.append(selectedItem);
+
+    // удаление товара из корзины
+    const toCloseItemButtonEl = document.querySelector(".toCloseButton");
+    toCloseItemButtonEl.addEventListener("click", (e) => {
+      e.target.parentElement.remove();
+    });
+  });
+});
+
+// закрытие корзины
+const cartWrapEl = document.querySelector(".previewCartWrap");
+const cartEl = document.querySelector(".cart");
+const closeCartBtnEl = document.querySelector(".closeСart");
+
+closeCartBtnEl.addEventListener("click", () => {
+  cartWrapEl.classList.remove("transparentBcg");
+  cartEl.classList.remove("showCart");
 });
